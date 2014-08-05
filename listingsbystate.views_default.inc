@@ -222,31 +222,6 @@ function listingsbystate_views_default_views() {
   $handler->display->display_options['relationships']['content_profile_rel']['field'] = 'content_profile_rel';
   $handler->display->display_options['relationships']['content_profile_rel']['required'] = 0;
   $handler->display->display_options['relationships']['content_profile_rel']['type'] = 'profile';
-  /* Field: Content: User Photo (field_user_photo) */
-  $handler->display->display_options['fields']['field_user_photo_fid']['id'] = 'field_user_photo_fid';
-  $handler->display->display_options['fields']['field_user_photo_fid']['table'] = 'node_data_field_user_photo';
-  $handler->display->display_options['fields']['field_user_photo_fid']['field'] = 'field_user_photo_fid';
-  $handler->display->display_options['fields']['field_user_photo_fid']['relationship'] = 'content_profile_rel';
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['field_user_photo_fid']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_user_photo_fid']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['link_to_node'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['label_type'] = 'none';
-  $handler->display->display_options['fields']['field_user_photo_fid']['format'] = 'user_photo_small_tn_default';
   /* Field: User: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
@@ -286,6 +261,31 @@ function listingsbystate_views_default_views() {
   $handler->display->display_options['fields']['city']['hide_empty'] = 0;
   $handler->display->display_options['fields']['city']['empty_zero'] = 0;
   $handler->display->display_options['fields']['city']['hide_alter_empty'] = 1;
+  /* Field: Content: User Photo (field_user_photo) */
+  $handler->display->display_options['fields']['field_user_photo_fid']['id'] = 'field_user_photo_fid';
+  $handler->display->display_options['fields']['field_user_photo_fid']['table'] = 'node_data_field_user_photo';
+  $handler->display->display_options['fields']['field_user_photo_fid']['field'] = 'field_user_photo_fid';
+  $handler->display->display_options['fields']['field_user_photo_fid']['relationship'] = 'content_profile_rel';
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['field_user_photo_fid']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_user_photo_fid']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['hide_alter_empty'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['link_to_node'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['label_type'] = 'none';
+  $handler->display->display_options['fields']['field_user_photo_fid']['format'] = 'user_photo_small_tn_default';
   /* Sort criterion: Location: Latitude */
   $handler->display->display_options['sorts']['latitude']['id'] = 'latitude';
   $handler->display->display_options['sorts']['latitude']['table'] = 'location';
@@ -466,31 +466,6 @@ function listingsbystate_views_default_views() {
   $handler->display->display_options['relationships']['content_profile_rel']['field'] = 'content_profile_rel';
   $handler->display->display_options['relationships']['content_profile_rel']['required'] = 0;
   $handler->display->display_options['relationships']['content_profile_rel']['type'] = 'profile';
-  /* Field: Content: User Photo (field_user_photo) */
-  $handler->display->display_options['fields']['field_user_photo_fid']['id'] = 'field_user_photo_fid';
-  $handler->display->display_options['fields']['field_user_photo_fid']['table'] = 'node_data_field_user_photo';
-  $handler->display->display_options['fields']['field_user_photo_fid']['field'] = 'field_user_photo_fid';
-  $handler->display->display_options['fields']['field_user_photo_fid']['relationship'] = 'content_profile_rel';
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['field_user_photo_fid']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_user_photo_fid']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['link_to_node'] = 0;
-  $handler->display->display_options['fields']['field_user_photo_fid']['label_type'] = 'none';
-  $handler->display->display_options['fields']['field_user_photo_fid']['format'] = 'user_photo_small_tn_default';
   /* Field: User: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
@@ -554,6 +529,31 @@ function listingsbystate_views_default_views() {
   $handler->display->display_options['fields']['province']['hide_empty'] = 0;
   $handler->display->display_options['fields']['province']['empty_zero'] = 0;
   $handler->display->display_options['fields']['province']['hide_alter_empty'] = 1;
+  /* Field: Content: User Photo (field_user_photo) */
+  $handler->display->display_options['fields']['field_user_photo_fid']['id'] = 'field_user_photo_fid';
+  $handler->display->display_options['fields']['field_user_photo_fid']['table'] = 'node_data_field_user_photo';
+  $handler->display->display_options['fields']['field_user_photo_fid']['field'] = 'field_user_photo_fid';
+  $handler->display->display_options['fields']['field_user_photo_fid']['relationship'] = 'content_profile_rel';
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['field_user_photo_fid']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_user_photo_fid']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['hide_alter_empty'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['link_to_node'] = 0;
+  $handler->display->display_options['fields']['field_user_photo_fid']['label_type'] = 'none';
+  $handler->display->display_options['fields']['field_user_photo_fid']['format'] = 'user_photo_small_tn_default';
   /* Sort criterion: Location: Latitude */
   $handler->display->display_options['sorts']['latitude']['id'] = 'latitude';
   $handler->display->display_options['sorts']['latitude']['table'] = 'location';
